@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Load vectorizer and model
 MODEL_DIR = os.path.dirname(os.path.abspath(__file__))
 VECTORIZER_PATH = os.path.join(MODEL_DIR, "vectorizer.pkl")
-MODEL_PATH = os.path.join(MODEL_DIR, "model.pkl")
+MODEL_PATH = os.path.join(MODEL_DIR, "modelSent.pkl")
 
 with open(VECTORIZER_PATH, "rb") as f:
     vectorizer = pickle.load(f)
